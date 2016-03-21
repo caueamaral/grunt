@@ -1,1 +1,5 @@
-# grunt
+# GRUNT
+
+# Gruntfile.js
+
+# package.json
