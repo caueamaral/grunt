@@ -1,4 +1,4 @@
-# Grunt
+# Como utilizar o Grunt
 
 ## Node
 O Grunt roda em Node.js, para ver se você tem ele instalado digite no terminal "node -v".
