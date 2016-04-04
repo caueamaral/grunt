@@ -1,11 +1,12 @@
 # Como utilizar o Grunt
 
 ## Node
-O Grunt roda em Node.js, para ver se você tem ele instalado digite no terminal "node -v".
+O Grunt roda em Node.js. Para ver se você tem o Node.js instalado no terminal digite "node -v".
 Caso não tenha baixe ele em https://nodejs.org e instale.
 
 ## CLI
-Para usar o Grunt, primeiro você precisa instalar uma interface do Grunt para poder utiliza-lo através do terminal através do comando "npm install -g grunt-cli".
+É um interface que você precisa instalar para poder utilizar o Grunt através do terminal.
+No terminal digite "npm install -g grunt-cli".
 
 ## package.json
 É o arquivo onde indica as dependências do projeto.
