@@ -5,7 +5,7 @@ O Grunt roda em Node.js. Para ver se você tem o Node.js instalado no terminal di
 Caso não tenha baixe ele em https://nodejs.org e instale.
 
 ## CLI
-É um interface que você precisa instalar para poder utilizar o Grunt através do terminal.
+É uma interface que serve para gerenciar qual versão do Grunt está sendo utilizada nos seus projetos.
 No terminal digite "npm install -g grunt-cli".
 
 ## package.json
