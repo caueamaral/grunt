@@ -12,7 +12,7 @@ No terminal digite "npm install -g grunt-cli".
 É o arquivo onde indica as dependências do projeto.
 
 ## Gruntfile.js
-É o arquivo onde você configura as dependências do seu projeto, dizendo como elas irão se comportar.
+É o arquivo onde você configura as dependências do seu projeto, dizendo como elas irão se comportar através de "tasks".
 
 ## Como usar
 Passo 1: Adicione os arquivos "package.json" e "Gruntfile.js" na raiz do projeto.
