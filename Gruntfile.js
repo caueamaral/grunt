@@ -1,20 +1,17 @@
 module.exports = function (grunt) {
-
 	"use strict";
 
-	var config;
-
-	config = {
-  	/* watch */
+	grunt.initConfig({
+  	// watch
   	watch: {
     	sass: {
       	files: ['webroot/sass/*.scss'],
-      	tasks: ['sass']
+      	tasks: ['sass', 'concat']
     	}
   	},
-    /* sass */
+    // sass
 		sass: {
-			'build' : {
+			'build': {
 				'options': {
 					'trace': true,
 					'style': 'compressed'
@@ -27,17 +24,25 @@ module.exports = function (grunt) {
 					'ext': '.css'
 				}]
 			}
+		},
+		// concat
+		concat: {
+  		options: {
+    		separator: ';',
+    		stripBanners: true
+  		},
+  		dist: {
+    		src: ['webroot/css/site/layout.css', 'webroot/css/site/paginas.css'],
+    		dest: 'webroot/css/site/estilos.css',
+  		}
 		}
-	};
-
-	// Init Grunt
-	grunt.initConfig(config);
+	});
 
 	// Load Tasks
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 
 	// Register tasks
 	grunt.registerTask('default', ['watch']);
-
 };
